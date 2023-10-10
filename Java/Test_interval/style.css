@@ -1,0 +1,39 @@
+/* .zegar {
+  display: flex;
+}
+  
+.zegar svg {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+} */
+
+div {
+  display: flex;
+}
+
+svg {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+.czas {
+  display: flex;
+}
+  
+.czas svg {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+.data {
+  display: flex;
+}
+  
+.data svg {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}

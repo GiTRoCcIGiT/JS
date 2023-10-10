@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>(int)</th>
+            <th>(date)</th>
+            <th>(diff)</th>
+        </tr>
+        <tr>
+            <td class="int"></td>
+            <td class="date"></td>
+            <td class='diff'></td>
+        </tr>
+    </table>
+    <script>
+        let int=0;
+        let czas = new Date()
+        let iint = document.querySelector('.int');
+        let idate = document.querySelector('.date');
+        let idiff = document.querySelector('.diff');
+        setInterval( ()=> {
+            int+=1000;
+            iint.innerHTML = int;
+            idate.innerHTML = (((new Date())- czas)).toFixed(0);
+            idiff.innerHTML = (((new Date())- czas)).toFixed(0)- int;
+
+        },1000);
+
+    </script>
+</body>
+</html>

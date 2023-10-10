@@ -1,0 +1,37 @@
+@mixin test ($txt, $bg, $font)
+{
+    font-family: $font;
+    background-color: $bg;
+    color: $txt;
+}
+
+.klasa1 {
+    @include test(red, green, verdena)
+}
+.klasa2 {
+    @include test(red, blue, verdena)
+}
+.klasa3 {
+    @include test(rgb(81, 255, 81), green, verdena)
+}
+.klasa4 {
+    @include test(yellow, green, verdena)
+}
+.klasa5 {
+    @include test(red, black, verdena)
+}
+.klasa6 {
+    @include test(black, white, verdena)
+}
+.klasa7 {
+    @include test(white, black, verdena)
+}
+.klasa8 {
+    @include test(black, pink, verdena)
+}
+.klasa9 {
+    @include test(red, white, verdena)
+}
+.klasa10 {
+    @include test(blue, green, verdena)
+}
